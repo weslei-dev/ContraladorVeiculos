@@ -1,0 +1,61 @@
+﻿@model List<WebMvcRazorCshap.Models.Alterar>
+
+@{
+    var veiculo = ViewBag.veiculo;
+}
+
+<form action="/veiculos/Salvar" method="post">
+
+
+    <h1 class="row col-md-offset">Alterar Veículo</h1>
+
+    <div class="row col-md-offset-3">
+        <input type="hidden" id="id" name="id" value="@veiculo.Id" />
+        <label for="nome" class="col-sm-2 col-form-label text-right">Marca:</label>
+        <div class="col-sm-4">
+            <input type="text" id="nome" name="nome" value="@veiculo.Nome" />
+        </div>
+    </div>
+    <div class="row col-md-offset-3">
+        <label for="modelo" class="col-sm-2 col-form-label text-right">Modelo:</label>
+        <div class="col-sm-4">
+            <input type="text" id="Modelo" name="Modelo" value="@veiculo.Modelo" />
+        </div>
+    </div>
+    <div class="row col-md-offset-3">
+        <label for="fabricacao" class="col-sm-2 col-form-label text-right">Ano:</label>
+        <div class="col-sm-4">
+            <input type="text" id="fabricacao" name="fabricacao" value="@veiculo.Ano" />
+        </div>
+    </div>
+    <div class="row col-md-offset-3">
+        <label for="cor" class="col-sm-2 col-form-label text-right">Cor:</label>
+        <div class="col-sm-4">
+            <input type="text" id="cor" name="cor" value="@veiculo.Cor" />
+        </div>
+    </div>
+    <div class="row col-md-offset-3">
+        <label for="combustivel" class="col-sm-2 col-form-label text-right">Combustivel:</label>
+        <div class="col-sm-4">
+            <input type="text" id="combustivel" name="combustivel" value="@veiculo.Combustivel" />
+        </div>
+    </div>
+    <div class="row col-md-offset-3">
+        <label for="autoatico" class="col-sm-2 col-form-label text-right">Automatico:</label>
+        <div class="col-sm-4">
+            <input type="text" id="automatico" name="automatico" value="@veiculo.Automatico" />
+        </div>
+    </div>
+    <div class="row col-md-offset-3">
+        <label for="valor" class="col-sm-2 col-form-label text-right">Valor:</label>
+        <div class="col-sm-4">
+            <input type="text" id="valor" name="valor" value="@veiculo.Valor" />
+        </div>
+    </div>
+
+    <br />
+    <div class="button row col-md-offset-0">
+        <button type="submit" class="btn btn-primary">Salvar alteração</button>
+    </div>
+</form>
+

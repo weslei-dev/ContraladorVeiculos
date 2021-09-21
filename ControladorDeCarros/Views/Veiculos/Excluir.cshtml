@@ -1,0 +1,64 @@
+﻿@model List<WebMvcRazorCshap.Models.Alterar>
+
+@{
+    var veiculo = ViewBag.veiculo;
+}
+
+<h1>@ViewBag.Title</h1>
+<h2>@ViewBag.mensagem</h2>
+<form action="/veiculos/Excluir" method="post">
+
+    <div class="row col-md-offset-4">
+        <input type="hidden" id="id" name="id" value="@veiculo.Id" />
+        <label for="nome" class="col-sm-2 col-form-label text-right">Marca:</label>
+        <div class="col-sm-2">
+            <input type="text" id="nome" name="nome" readonly value="@veiculo.Nome" />
+        </div>
+    </div>
+    <div class="row col-md-offset-4">
+        <label for="modelo" class="col-sm-2 col-form-label text-right">Modelo:</label>
+        <div class="col-sm-2">
+            <input type="text" id="Modelo" name="Modelo" readonly value="@veiculo.Modelo" />
+        </div>
+    </div>
+    <div class="row col-md-offset-4">
+        <label for="fabricacao" class="col-sm-2 col-form-label text-right">Ano:</label>
+        <div class="col-sm-2">
+            <input type="text" id="fabricacao" name="fabricacao" readonly value="@veiculo.Ano" />
+        </div>
+    </div>
+    <div class="row col-md-offset-4">
+        <label for="cor" class="col-sm-2 col-form-label text-right">Cor:</label>
+        <div class="col-sm-2">
+            <input type="text" id="cor" name="cor" readonly value="@veiculo.Cor" />
+        </div>
+    </div>
+    <div class="row col-md-offset-4">
+        <label for="combustivel" class="col-sm-2 col-form-label text-right">Combustivel:</label>
+        <div class="col-sm-2">
+            <input type="text" id="combustivel" name="combustivel" readonly value="@veiculo.Combustivel" />
+        </div>
+    </div>
+    <div class="row col-md-offset-4">
+        <label for="autoatico" class="col-sm-2 col-form-label text-right">Automatico:</label>
+        <div class="col-sm-2">
+            <input type="text" id="automatico" name="automatico" readonly value="@veiculo.Automatico" />
+        </div>
+    </div>
+    <div class="row col-md-offset-4">
+        <label for="valor" class="col-sm-2 col-form-label text-right">Valor:</label>
+        <div class="col-sm-2">
+            <input type="text" id="valor" name="valor" readonly value="@veiculo.Valor" />
+        </div>
+    </div>
+
+    <br />
+    <div class="button ">
+        <button type="submit" class="btn btn-primary">Excluir</button>
+    </div>
+
+
+
+
+</form>
+

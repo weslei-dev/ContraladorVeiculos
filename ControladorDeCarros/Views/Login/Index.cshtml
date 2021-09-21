@@ -1,0 +1,39 @@
+﻿
+@*@{
+    ViewBag.Title = "Index";
+}
+
+<h2>IntegraçãoNotfis</h2>
+<h3>Entre com seu Login</h3>
+
+
+<form action="/Login/ChecarLogin" method="post">
+
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4 text-left">
+            <label for="userId" class="form-label">Usuario</label>
+            <input type="email" class="form-control" name="Email" id="Email" placeholder="nome@exemplo.com" />
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4 text-left">
+            <label for="userId" class="form-label">Senha</label>
+            <input type="password" class="form-control" name="PassWord" id="PassWord" placeholder="Senha" />
+        </div>
+    </div>
+    <p>@ViewBag.Erro</p>
+    <br />
+    <div class="button ">
+        <button type="submit" class="btn btn-primary">Entrar</button>
+    </div>
+    <br />
+
+</form>
+<form action="/Login/Registrar" method="post">
+    <div class="button ">
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </div>
+
+</form>*@
+
